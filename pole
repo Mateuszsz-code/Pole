@@ -1,0 +1,44 @@
+import math
+PI = math.pi
+print(PI)
+print(math.sqrt(2))
+
+print("a - polaskie b - bryly c")
+inp = input("--- ")
+if inp == "a":
+    print("a - ppKwadaratu b - ppProstokata c - ppTrojkata d - ppRownolegoboku e - ppromnu f - pptrapezu")
+    inp = input()
+    if inp == "a":
+        a = float(input("a = "))
+        print(f"dla {a} ppKwadratu = {a**2}")
+    elif inp == "b":
+        a = float(input("a = "))
+        b = float(input("b = "))
+        print(f"dla a={a} i dla b={b} ppProstokatu = {a*b}")
+    elif inp == "c":
+        a = float(input("a = "))
+        h = float(input("h = "))
+        print(f"dla a={a} i dla h={h} ppTrojkata = {a*h*0.5}")
+    elif inp == "d":
+        a = float(input("a = "))
+        h = float(input("h = "))
+        print(f"dla a={a} i dla h={h} ppRownolegloboku = {a*h}")
+    elif inp == "e":
+        a = float(input("a = "))
+        h = float(input("h = "))
+        print(f"dla a={a} i dla h={h} pprombu = {a*h}")
+    elif inp == "f":
+        a = float(input("a = "))
+        b = float(input("b = "))
+        h = float(input("h = "))
+        print(f"dla a={a} dla b={b} i dla h={h} ppTrapezu = {(a+b)*h*0.5}")
+    else:
+        print("Nie ma takiej komendy")
+elif inp == "b":
+    print("a - ppSzeacianu ")
+    inp = input("--- ")
+    if inp == "a":
+        a = float(input("a = "))
+        print(f"dla a={a} ppSzecaniu={6*a**2}")
+else:
+    print()
