@@ -32,6 +32,18 @@ if inp == "a":
         b = float(input("b = "))
         h = float(input("h = "))
         print(f"dla a={a} dla b={b} i dla h={h} ppTrapezu = {(a+b)*h*0.5}")
+elif inp == "g":
+        r = float(input("r = "))
+        Pi = float(input("Pi = "))
+        print(f"dla r={r} dla Pi={Pi} ppkola = {Pi*r**2}")
+    elif inp == "h":
+        a = float(input("a = "))
+        print(f"dla a={a} ppTrojkatrowno = {(a**2)*math.sqrt(3)/4}")
+    elif inp == "i":
+        e = float(input("e = "))
+        f = float(input("f = "))
+        print(f"dla e={e} dla f={f} pprownoleglobok = {e*f/2}")
+    
     else:
         print("Nie ma takiej komendy")
 elif inp == "b":
